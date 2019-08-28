@@ -18,8 +18,8 @@ struct Message: Codable, Equatable {
     guard var date = dateValue else {
       return ""
     }
-    let offfset: Double = 60 * 60 * 24 * 5
-    date.addTimeInterval(3600 * 24 * 28 * 6 - offfset)
+//    let offfset: Double = 60 * 60 * 24 * 5
+//    date.addTimeInterval(3600 * 24 * 28 * 6 - offfset)
     let elapsedTimeInSeconds = Date().timeIntervalSince(date)
     
     let secondInDays: TimeInterval = 60 * 60 * 24
