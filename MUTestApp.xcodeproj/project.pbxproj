@@ -11,6 +11,8 @@
 		C469F35E23167405004F9C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C469F35D23167405004F9C64 /* Assets.xcassets */; };
 		C469F36123167405004F9C64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C469F35F23167405004F9C64 /* LaunchScreen.storyboard */; };
 		C469F36C23167405004F9C64 /* MUTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F36B23167405004F9C64 /* MUTestAppTests.swift */; };
+		C469F37F23167703004F9C64 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C469F37D23167702004F9C64 /* Alamofire.framework */; };
+		C469F38023167703004F9C64 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C469F37E23167702004F9C64 /* Kingfisher.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,8 @@
 		C469F36723167405004F9C64 /* MUTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MUTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C469F36B23167405004F9C64 /* MUTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUTestAppTests.swift; sourceTree = "<group>"; };
 		C469F36D23167405004F9C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C469F37D23167702004F9C64 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		C469F37E23167702004F9C64 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C469F37F23167703004F9C64 /* Alamofire.framework in Frameworks */,
+				C469F38023167703004F9C64 /* Kingfisher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +64,7 @@
 				C469F35523167404004F9C64 /* MUTestApp */,
 				C469F36A23167405004F9C64 /* MUTestAppTests */,
 				C469F35423167404004F9C64 /* Products */,
+				C469F37C23167702004F9C64 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +137,15 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		C469F37C23167702004F9C64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C469F37D23167702004F9C64 /* Alamofire.framework */,
+				C469F37E23167702004F9C64 /* Kingfisher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,6 +156,7 @@
 				C469F34F23167404004F9C64 /* Sources */,
 				C469F35023167404004F9C64 /* Frameworks */,
 				C469F35123167404004F9C64 /* Resources */,
+				C469F37B23167573004F9C64 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -224,6 +241,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C469F37B23167573004F9C64 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C469F34F23167404004F9C64 /* Sources */ = {
@@ -385,6 +427,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MUTestApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +449,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MUTestApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
