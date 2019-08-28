@@ -13,6 +13,12 @@
 		C469F36C23167405004F9C64 /* MUTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F36B23167405004F9C64 /* MUTestAppTests.swift */; };
 		C469F37F23167703004F9C64 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C469F37D23167702004F9C64 /* Alamofire.framework */; };
 		C469F38023167703004F9C64 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C469F37E23167702004F9C64 /* Kingfisher.framework */; };
+		C469F4142316AF20004F9C64 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F4102316AF20004F9C64 /* Reachability.swift */; };
+		C469F4152316AF20004F9C64 /* Completion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F4132316AF20004F9C64 /* Completion.swift */; };
+		C469F41D2316AF3D004F9C64 /* UIViewController+ShowAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F4192316AF3D004F9C64 /* UIViewController+ShowAlert.swift */; };
+		C469F41E2316AF3D004F9C64 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F41A2316AF3D004F9C64 /* Presentable.swift */; };
+		C469F41F2316AF3D004F9C64 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F41B2316AF3D004F9C64 /* Storyboard.swift */; };
+		C469F4202316AF3D004F9C64 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F41C2316AF3D004F9C64 /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,12 @@
 		C469F36D23167405004F9C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C469F37D23167702004F9C64 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		C469F37E23167702004F9C64 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		C469F4102316AF20004F9C64 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		C469F4132316AF20004F9C64 /* Completion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Completion.swift; sourceTree = "<group>"; };
+		C469F4192316AF3D004F9C64 /* UIViewController+ShowAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ShowAlert.swift"; sourceTree = "<group>"; };
+		C469F41A2316AF3D004F9C64 /* Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		C469F41B2316AF3D004F9C64 /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		C469F41C2316AF3D004F9C64 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +130,7 @@
 		C469F378231674AA004F9C64 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				C469F4162316AF3D004F9C64 /* Common */,
 				C469F35F23167405004F9C64 /* LaunchScreen.storyboard */,
 			);
 			path = Presentation;
@@ -133,6 +146,8 @@
 		C469F37A231674B5004F9C64 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C469F4112316AF20004F9C64 /* Extentions */,
+				C469F40F2316AF20004F9C64 /* Helpers */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -144,6 +159,57 @@
 				C469F37E23167702004F9C64 /* Kingfisher.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C469F40F2316AF20004F9C64 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C469F4102316AF20004F9C64 /* Reachability.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C469F4112316AF20004F9C64 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				C469F4122316AF20004F9C64 /* Foundation */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		C469F4122316AF20004F9C64 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				C469F4132316AF20004F9C64 /* Completion.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		C469F4162316AF3D004F9C64 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C469F4172316AF3D004F9C64 /* Extentions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C469F4172316AF3D004F9C64 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				C469F4182316AF3D004F9C64 /* UIKit */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		C469F4182316AF3D004F9C64 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				C469F4192316AF3D004F9C64 /* UIViewController+ShowAlert.swift */,
+				C469F41A2316AF3D004F9C64 /* Presentable.swift */,
+				C469F41B2316AF3D004F9C64 /* Storyboard.swift */,
+				C469F41C2316AF3D004F9C64 /* NavigationController.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +338,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C469F41D2316AF3D004F9C64 /* UIViewController+ShowAlert.swift in Sources */,
+				C469F4152316AF20004F9C64 /* Completion.swift in Sources */,
+				C469F4142316AF20004F9C64 /* Reachability.swift in Sources */,
+				C469F41E2316AF3D004F9C64 /* Presentable.swift in Sources */,
+				C469F41F2316AF3D004F9C64 /* Storyboard.swift in Sources */,
+				C469F4202316AF3D004F9C64 /* NavigationController.swift in Sources */,
 				C469F35723167404004F9C64 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
