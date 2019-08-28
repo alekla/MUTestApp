@@ -8,6 +8,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let window = UIWindow(frame: UIScreen.main.bounds)
     self.window = window
     window.makeKeyAndVisible()
+    
+    let servicesFactory = ServicesFactoryImp()
+    let modulesFactory = ModulesFactoryImp(servicesFactory: servicesFactory)
+    let coordinator = AppCoordinator()
+    coordinator.start(window: window, modulesFactory: modulesFactory)
+    
     return true
   }
 }

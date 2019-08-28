@@ -24,6 +24,9 @@
 		C469F4282316AFF8004F9C64 /* MessagesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F4252316AFF8004F9C64 /* MessagesResponse.swift */; };
 		C469F4292316AFF8004F9C64 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F4262316AFF8004F9C64 /* Image.swift */; };
 		C469F42B2316B006004F9C64 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F42A2316B005004F9C64 /* Constants.swift */; };
+		C469F42D2316B06C004F9C64 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F42C2316B06C004F9C64 /* AppCoordinator.swift */; };
+		C469F42F2316B09B004F9C64 /* ServicesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F42E2316B09B004F9C64 /* ServicesFactory.swift */; };
+		C469F4312316B0AD004F9C64 /* ModulesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F4302316B0AD004F9C64 /* ModulesFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		C469F4252316AFF8004F9C64 /* MessagesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesResponse.swift; sourceTree = "<group>"; };
 		C469F4262316AFF8004F9C64 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		C469F42A2316B005004F9C64 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C469F42C2316B06C004F9C64 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		C469F42E2316B09B004F9C64 /* ServicesFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesFactory.swift; sourceTree = "<group>"; };
+		C469F4302316B0AD004F9C64 /* ModulesFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModulesFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,7 @@
 				C469F377231674A3004F9C64 /* Resources */,
 				C469F3762316749C004F9C64 /* Services */,
 				C469F35623167404004F9C64 /* AppDelegate.swift */,
+				C469F42C2316B06C004F9C64 /* AppCoordinator.swift */,
 				C469F36223167405004F9C64 /* Info.plist */,
 			);
 			path = MUTestApp;
@@ -125,6 +132,7 @@
 		C469F3762316749C004F9C64 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C469F42E2316B09B004F9C64 /* ServicesFactory.swift */,
 				C469F4212316AF7F004F9C64 /* MessagesNetworkService.swift */,
 			);
 			path = Services;
@@ -144,6 +152,7 @@
 			children = (
 				C469F4162316AF3D004F9C64 /* Common */,
 				C469F35F23167405004F9C64 /* LaunchScreen.storyboard */,
+				C469F4302316B0AD004F9C64 /* ModulesFactory.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -363,15 +372,18 @@
 			files = (
 				C469F41D2316AF3D004F9C64 /* UIViewController+ShowAlert.swift in Sources */,
 				C469F4152316AF20004F9C64 /* Completion.swift in Sources */,
+				C469F42D2316B06C004F9C64 /* AppCoordinator.swift in Sources */,
 				C469F4222316AF7F004F9C64 /* MessagesNetworkService.swift in Sources */,
 				C469F4272316AFF8004F9C64 /* Message.swift in Sources */,
 				C469F4142316AF20004F9C64 /* Reachability.swift in Sources */,
 				C469F41E2316AF3D004F9C64 /* Presentable.swift in Sources */,
+				C469F4312316B0AD004F9C64 /* ModulesFactory.swift in Sources */,
 				C469F41F2316AF3D004F9C64 /* Storyboard.swift in Sources */,
 				C469F4202316AF3D004F9C64 /* NavigationController.swift in Sources */,
 				C469F4282316AFF8004F9C64 /* MessagesResponse.swift in Sources */,
 				C469F4292316AFF8004F9C64 /* Image.swift in Sources */,
 				C469F35723167404004F9C64 /* AppDelegate.swift in Sources */,
+				C469F42F2316B09B004F9C64 /* ServicesFactory.swift in Sources */,
 				C469F42B2316B006004F9C64 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
