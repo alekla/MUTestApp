@@ -27,6 +27,18 @@
 		C469F42D2316B06C004F9C64 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F42C2316B06C004F9C64 /* AppCoordinator.swift */; };
 		C469F42F2316B09B004F9C64 /* ServicesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F42E2316B09B004F9C64 /* ServicesFactory.swift */; };
 		C469F4312316B0AD004F9C64 /* ModulesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F4302316B0AD004F9C64 /* ModulesFactory.swift */; };
+		C469F43D2316B197004F9C64 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F4342316B197004F9C64 /* MessageTableViewCell.swift */; };
+		C469F43E2316B197004F9C64 /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C469F4352316B197004F9C64 /* MessageTableViewCell.xib */; };
+		C469F43F2316B197004F9C64 /* Messages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C469F4362316B197004F9C64 /* Messages.storyboard */; };
+		C469F4402316B197004F9C64 /* MessagesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F4382316B197004F9C64 /* MessagesCoordinator.swift */; };
+		C469F4412316B197004F9C64 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F43A2316B197004F9C64 /* MessagesViewController.swift */; };
+		C469F4422316B197004F9C64 /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F43B2316B197004F9C64 /* EmptyViewController.swift */; };
+		C469F4432316B197004F9C64 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F43C2316B197004F9C64 /* LoadingViewController.swift */; };
+		C469F4452316BA49004F9C64 /* UIImageView+setImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F4442316BA49004F9C64 /* UIImageView+setImage.swift */; };
+		C469F4482316C8B5004F9C64 /* MessagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F4472316C8B5004F9C64 /* MessagesController.swift */; };
+		C469F44B2316CD15004F9C64 /* UIViewController+Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F44A2316CD15004F9C64 /* UIViewController+Child.swift */; };
+		C469F4502316D1FA004F9C64 /* MockMessagesNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F44F2316D1FA004F9C64 /* MockMessagesNetworkService.swift */; };
+		C469F46C2316E40B004F9C64 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F46B2316E40B004F9C64 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +76,18 @@
 		C469F42C2316B06C004F9C64 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		C469F42E2316B09B004F9C64 /* ServicesFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesFactory.swift; sourceTree = "<group>"; };
 		C469F4302316B0AD004F9C64 /* ModulesFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModulesFactory.swift; sourceTree = "<group>"; };
+		C469F4342316B197004F9C64 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		C469F4352316B197004F9C64 /* MessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
+		C469F4372316B197004F9C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Messages.storyboard; sourceTree = "<group>"; };
+		C469F4382316B197004F9C64 /* MessagesCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesCoordinator.swift; sourceTree = "<group>"; };
+		C469F43A2316B197004F9C64 /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		C469F43B2316B197004F9C64 /* EmptyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
+		C469F43C2316B197004F9C64 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		C469F4442316BA49004F9C64 /* UIImageView+setImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+setImage.swift"; sourceTree = "<group>"; };
+		C469F4472316C8B5004F9C64 /* MessagesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesController.swift; sourceTree = "<group>"; };
+		C469F44A2316CD15004F9C64 /* UIViewController+Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Child.swift"; sourceTree = "<group>"; };
+		C469F44F2316D1FA004F9C64 /* MockMessagesNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMessagesNetworkService.swift; sourceTree = "<group>"; };
+		C469F46B2316E40B004F9C64 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,8 +156,8 @@
 		C469F3762316749C004F9C64 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C469F44E2316D1EB004F9C64 /* MessagesNetworkService */,
 				C469F42E2316B09B004F9C64 /* ServicesFactory.swift */,
-				C469F4212316AF7F004F9C64 /* MessagesNetworkService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -150,6 +174,7 @@
 		C469F378231674AA004F9C64 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				C469F4322316B197004F9C64 /* Messages */,
 				C469F4162316AF3D004F9C64 /* Common */,
 				C469F35F23167405004F9C64 /* LaunchScreen.storyboard */,
 				C469F4302316B0AD004F9C64 /* ModulesFactory.swift */,
@@ -170,6 +195,7 @@
 		C469F37A231674B5004F9C64 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C469F4512316DA8E004F9C64 /* Libs */,
 				C469F4112316AF20004F9C64 /* Extentions */,
 				C469F40F2316AF20004F9C64 /* Helpers */,
 			);
@@ -232,6 +258,9 @@
 				C469F41A2316AF3D004F9C64 /* Presentable.swift */,
 				C469F41B2316AF3D004F9C64 /* Storyboard.swift */,
 				C469F41C2316AF3D004F9C64 /* NavigationController.swift */,
+				C469F4442316BA49004F9C64 /* UIImageView+setImage.swift */,
+				C469F44A2316CD15004F9C64 /* UIViewController+Child.swift */,
+				C469F46B2316E40B004F9C64 /* BaseViewController.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -242,6 +271,69 @@
 				C469F4252316AFF8004F9C64 /* MessagesResponse.swift */,
 			);
 			path = Response;
+			sourceTree = "<group>";
+		};
+		C469F4322316B197004F9C64 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				C469F4462316C8AA004F9C64 /* Controller */,
+				C469F4332316B197004F9C64 /* Cells */,
+				C469F4392316B197004F9C64 /* ViewController */,
+				C469F4362316B197004F9C64 /* Messages.storyboard */,
+				C469F4382316B197004F9C64 /* MessagesCoordinator.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		C469F4332316B197004F9C64 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C469F4342316B197004F9C64 /* MessageTableViewCell.swift */,
+				C469F4352316B197004F9C64 /* MessageTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C469F4392316B197004F9C64 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C469F4492316CBDA004F9C64 /* Child */,
+				C469F43A2316B197004F9C64 /* MessagesViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C469F4462316C8AA004F9C64 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C469F4472316C8B5004F9C64 /* MessagesController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C469F4492316CBDA004F9C64 /* Child */ = {
+			isa = PBXGroup;
+			children = (
+				C469F43B2316B197004F9C64 /* EmptyViewController.swift */,
+				C469F43C2316B197004F9C64 /* LoadingViewController.swift */,
+			);
+			path = Child;
+			sourceTree = "<group>";
+		};
+		C469F44E2316D1EB004F9C64 /* MessagesNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				C469F4212316AF7F004F9C64 /* MessagesNetworkService.swift */,
+				C469F44F2316D1FA004F9C64 /* MockMessagesNetworkService.swift */,
+			);
+			path = MessagesNetworkService;
+			sourceTree = "<group>";
+		};
+		C469F4512316DA8E004F9C64 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +419,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C469F36123167405004F9C64 /* LaunchScreen.storyboard in Resources */,
+				C469F43E2316B197004F9C64 /* MessageTableViewCell.xib in Resources */,
+				C469F43F2316B197004F9C64 /* Messages.storyboard in Resources */,
 				C469F35E23167405004F9C64 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,18 +465,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				C469F41D2316AF3D004F9C64 /* UIViewController+ShowAlert.swift in Sources */,
+				C469F4502316D1FA004F9C64 /* MockMessagesNetworkService.swift in Sources */,
 				C469F4152316AF20004F9C64 /* Completion.swift in Sources */,
 				C469F42D2316B06C004F9C64 /* AppCoordinator.swift in Sources */,
+				C469F4482316C8B5004F9C64 /* MessagesController.swift in Sources */,
 				C469F4222316AF7F004F9C64 /* MessagesNetworkService.swift in Sources */,
 				C469F4272316AFF8004F9C64 /* Message.swift in Sources */,
+				C469F4422316B197004F9C64 /* EmptyViewController.swift in Sources */,
+				C469F4452316BA49004F9C64 /* UIImageView+setImage.swift in Sources */,
 				C469F4142316AF20004F9C64 /* Reachability.swift in Sources */,
+				C469F4432316B197004F9C64 /* LoadingViewController.swift in Sources */,
 				C469F41E2316AF3D004F9C64 /* Presentable.swift in Sources */,
 				C469F4312316B0AD004F9C64 /* ModulesFactory.swift in Sources */,
 				C469F41F2316AF3D004F9C64 /* Storyboard.swift in Sources */,
 				C469F4202316AF3D004F9C64 /* NavigationController.swift in Sources */,
 				C469F4282316AFF8004F9C64 /* MessagesResponse.swift in Sources */,
 				C469F4292316AFF8004F9C64 /* Image.swift in Sources */,
+				C469F44B2316CD15004F9C64 /* UIViewController+Child.swift in Sources */,
+				C469F4412316B197004F9C64 /* MessagesViewController.swift in Sources */,
+				C469F4402316B197004F9C64 /* MessagesCoordinator.swift in Sources */,
+				C469F46C2316E40B004F9C64 /* BaseViewController.swift in Sources */,
 				C469F35723167404004F9C64 /* AppDelegate.swift in Sources */,
+				C469F43D2316B197004F9C64 /* MessageTableViewCell.swift in Sources */,
 				C469F42F2316B09B004F9C64 /* ServicesFactory.swift in Sources */,
 				C469F42B2316B006004F9C64 /* Constants.swift in Sources */,
 			);
@@ -413,6 +517,14 @@
 				C469F36023167405004F9C64 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C469F4362316B197004F9C64 /* Messages.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C469F4372316B197004F9C64 /* Base */,
+			);
+			name = Messages.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -539,12 +651,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YAHM95EV76;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = MUTestApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -561,12 +674,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YAHM95EV76;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = MUTestApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

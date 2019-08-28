@@ -13,9 +13,16 @@ class ModulesFactoryImp: ModulesFactory {
   }
   
   func makeMessagesModule() -> (UIViewController, UIViewController) {
-    let view = UIViewController()
-    let nav = UINavigationController(rootViewController: view)
+    guard let navView: UIViewController = Storyboard.messages.instantiateInitialViewController() else {
+      fatalError("instantiateInitialViewController must be")
+    }
     
+    guard let nav = navView as? UINavigationController, let view = nav.viewControllers.first as? MessagesViewController else {
+      fatalError("MessagesViewController must be")
+    }
+    let controller = MessagesControllerImp(
+      messagesService: servicesFactory.messagesService)
+    view.controller = controller
     return (view, nav)
   }
 }

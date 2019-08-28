@@ -9,6 +9,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     self.window = window
     window.makeKeyAndVisible()
     
+    URLCache.shared.removeAllCachedResponses()
     let servicesFactory = ServicesFactoryImp()
     let modulesFactory = ModulesFactoryImp(servicesFactory: servicesFactory)
     let coordinator = AppCoordinator()
