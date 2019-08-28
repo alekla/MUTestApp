@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C469F35723167404004F9C64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F35623167404004F9C64 /* AppDelegate.swift */; };
-		C469F35923167404004F9C64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F35823167404004F9C64 /* ViewController.swift */; };
-		C469F35C23167404004F9C64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C469F35A23167404004F9C64 /* Main.storyboard */; };
 		C469F35E23167405004F9C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C469F35D23167405004F9C64 /* Assets.xcassets */; };
 		C469F36123167405004F9C64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C469F35F23167405004F9C64 /* LaunchScreen.storyboard */; };
 		C469F36C23167405004F9C64 /* MUTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F36B23167405004F9C64 /* MUTestAppTests.swift */; };
@@ -28,8 +26,6 @@
 /* Begin PBXFileReference section */
 		C469F35323167404004F9C64 /* MUTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MUTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C469F35623167404004F9C64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C469F35823167404004F9C64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C469F35B23167404004F9C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C469F35D23167405004F9C64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C469F36023167405004F9C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C469F36223167405004F9C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,11 +73,12 @@
 		C469F35523167404004F9C64 /* MUTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				C469F37A231674B5004F9C64 /* Common */,
+				C469F379231674B1004F9C64 /* Models */,
+				C469F378231674AA004F9C64 /* Presentation */,
+				C469F377231674A3004F9C64 /* Resources */,
+				C469F3762316749C004F9C64 /* Services */,
 				C469F35623167404004F9C64 /* AppDelegate.swift */,
-				C469F35823167404004F9C64 /* ViewController.swift */,
-				C469F35A23167404004F9C64 /* Main.storyboard */,
-				C469F35D23167405004F9C64 /* Assets.xcassets */,
-				C469F35F23167405004F9C64 /* LaunchScreen.storyboard */,
 				C469F36223167405004F9C64 /* Info.plist */,
 			);
 			path = MUTestApp;
@@ -94,6 +91,43 @@
 				C469F36D23167405004F9C64 /* Info.plist */,
 			);
 			path = MUTestAppTests;
+			sourceTree = "<group>";
+		};
+		C469F3762316749C004F9C64 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C469F377231674A3004F9C64 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C469F35D23167405004F9C64 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C469F378231674AA004F9C64 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C469F35F23167405004F9C64 /* LaunchScreen.storyboard */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		C469F379231674B1004F9C64 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C469F37A231674B5004F9C64 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,7 +213,6 @@
 			files = (
 				C469F36123167405004F9C64 /* LaunchScreen.storyboard in Resources */,
 				C469F35E23167405004F9C64 /* Assets.xcassets in Resources */,
-				C469F35C23167404004F9C64 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +230,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C469F35923167404004F9C64 /* ViewController.swift in Sources */,
 				C469F35723167404004F9C64 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,14 +253,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C469F35A23167404004F9C64 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C469F35B23167404004F9C64 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C469F35F23167405004F9C64 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -362,6 +386,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MUTestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -369,7 +394,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = alekla.MUTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -379,6 +404,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MUTestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -386,7 +412,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = alekla.MUTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
