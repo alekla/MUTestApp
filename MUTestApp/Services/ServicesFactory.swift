@@ -7,8 +7,14 @@ protocol ServicesFactory {
 
 class ServicesFactoryImp: ServicesFactory {
   
+  let isTestMode = false
+  
   lazy var messagesService: MessagesNetworkService = {
     let service = MessagesNetworkServiceImp()
+    
+    if isTestMode {
+      return MockMessagesNetworkService()
+    }
     
     return service
   }()

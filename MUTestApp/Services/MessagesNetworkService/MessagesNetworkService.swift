@@ -22,8 +22,8 @@ protocol MessagesNetworkService {
 
 /// Implementation for Messages Service
 class MessagesNetworkServiceImp: MessagesNetworkService {
-  
   func fetchMessages(completion: @escaping Completion<[Message], MessagesNetworkServiceError>) {
+
     AF.request(Constants.endpointURL + "/mu-ios/testwork/messages.json").responseDecodable {  (response:DataResponse<MessagesResponse>) in
       switch response.result {
       case .failure(let error):
@@ -34,9 +34,13 @@ class MessagesNetworkServiceImp: MessagesNetworkService {
           completion(.failure(.serverError))
         }
       case .success(let data):
-        completion(.success(data.messages))
+        if data.messages.isEmpty {
+          completion(.failure(.empty))
+        } else {
+          completion(.success(data.messages))
+        }
       }
-      
+
     }
   }
 }
