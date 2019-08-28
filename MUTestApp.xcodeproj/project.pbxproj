@@ -19,6 +19,11 @@
 		C469F41E2316AF3D004F9C64 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F41A2316AF3D004F9C64 /* Presentable.swift */; };
 		C469F41F2316AF3D004F9C64 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F41B2316AF3D004F9C64 /* Storyboard.swift */; };
 		C469F4202316AF3D004F9C64 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F41C2316AF3D004F9C64 /* NavigationController.swift */; };
+		C469F4222316AF7F004F9C64 /* MessagesNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F4212316AF7F004F9C64 /* MessagesNetworkService.swift */; };
+		C469F4272316AFF8004F9C64 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F4232316AFF8004F9C64 /* Message.swift */; };
+		C469F4282316AFF8004F9C64 /* MessagesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F4252316AFF8004F9C64 /* MessagesResponse.swift */; };
+		C469F4292316AFF8004F9C64 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F4262316AFF8004F9C64 /* Image.swift */; };
+		C469F42B2316B006004F9C64 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469F42A2316B005004F9C64 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,11 @@
 		C469F41A2316AF3D004F9C64 /* Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
 		C469F41B2316AF3D004F9C64 /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		C469F41C2316AF3D004F9C64 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		C469F4212316AF7F004F9C64 /* MessagesNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesNetworkService.swift; sourceTree = "<group>"; };
+		C469F4232316AFF8004F9C64 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		C469F4252316AFF8004F9C64 /* MessagesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesResponse.swift; sourceTree = "<group>"; };
+		C469F4262316AFF8004F9C64 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		C469F42A2316B005004F9C64 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +125,7 @@
 		C469F3762316749C004F9C64 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C469F4212316AF7F004F9C64 /* MessagesNetworkService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -122,6 +133,7 @@
 		C469F377231674A3004F9C64 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C469F42A2316B005004F9C64 /* Constants.swift */,
 				C469F35D23167405004F9C64 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -139,6 +151,9 @@
 		C469F379231674B1004F9C64 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C469F4262316AFF8004F9C64 /* Image.swift */,
+				C469F4232316AFF8004F9C64 /* Message.swift */,
+				C469F4242316AFF8004F9C64 /* Response */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -210,6 +225,14 @@
 				C469F41C2316AF3D004F9C64 /* NavigationController.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		C469F4242316AFF8004F9C64 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				C469F4252316AFF8004F9C64 /* MessagesResponse.swift */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,11 +363,16 @@
 			files = (
 				C469F41D2316AF3D004F9C64 /* UIViewController+ShowAlert.swift in Sources */,
 				C469F4152316AF20004F9C64 /* Completion.swift in Sources */,
+				C469F4222316AF7F004F9C64 /* MessagesNetworkService.swift in Sources */,
+				C469F4272316AFF8004F9C64 /* Message.swift in Sources */,
 				C469F4142316AF20004F9C64 /* Reachability.swift in Sources */,
 				C469F41E2316AF3D004F9C64 /* Presentable.swift in Sources */,
 				C469F41F2316AF3D004F9C64 /* Storyboard.swift in Sources */,
 				C469F4202316AF3D004F9C64 /* NavigationController.swift in Sources */,
+				C469F4282316AFF8004F9C64 /* MessagesResponse.swift in Sources */,
+				C469F4292316AFF8004F9C64 /* Image.swift in Sources */,
 				C469F35723167404004F9C64 /* AppDelegate.swift in Sources */,
+				C469F42B2316B006004F9C64 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
